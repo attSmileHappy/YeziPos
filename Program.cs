@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace YeziPos
@@ -16,7 +13,10 @@ namespace YeziPos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+
+            LoginForm loginForm = new LoginForm();
+            Application.Run(loginForm); // LoginForm을 모달로 실행
+          
         }
     }
 }
