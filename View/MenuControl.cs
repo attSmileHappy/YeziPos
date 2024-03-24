@@ -15,8 +15,15 @@ namespace YeziPos.Controls
         public decimal MenuPrice
         {
             get { return decimal.Parse(lblMenuPrice.Text.Replace("$", "")); }
-            set { lblMenuPrice.Text = $"${value:F2}"; }
+            set
+            {
+                if (value == 0)
+                    lblMenuPrice.Text = "0000원";
+                else
+                    lblMenuPrice.Text = $"${value:F2}";
+            }
         }
+
 
         public Image MenuImage
         {

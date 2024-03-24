@@ -92,7 +92,7 @@ namespace YeziPos
         }
         private void UpdateTotalPriceLabel()
         {
-            labelTotalPrice.Text = $"총 가격: ${totalPrice:F2}"; // 총 가격 표시
+            labelTotalPrice.Text = $"총 가격: {totalPrice}원"; // 총 가격 표시
         }
 
         private void UpdateTotalQuantity()

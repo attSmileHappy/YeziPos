@@ -36,6 +36,7 @@
             this.vStackPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.labelTotalPrice = new System.Windows.Forms.Label();
             this.labelTotalQuantity = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -100,11 +101,11 @@
             this.labelTotalPrice.AutoSize = true;
             this.labelTotalPrice.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelTotalPrice.ForeColor = System.Drawing.Color.Red;
-            this.labelTotalPrice.Location = new System.Drawing.Point(950, 632);
+            this.labelTotalPrice.Location = new System.Drawing.Point(985, 632);
             this.labelTotalPrice.Name = "labelTotalPrice";
-            this.labelTotalPrice.Size = new System.Drawing.Size(61, 19);
+            this.labelTotalPrice.Size = new System.Drawing.Size(83, 19);
             this.labelTotalPrice.TabIndex = 2;
-            this.labelTotalPrice.Text = "label1";
+            this.labelTotalPrice.Text = "총 가격:";
             // 
             // labelTotalQuantity
             // 
@@ -113,15 +114,25 @@
             this.labelTotalQuantity.ForeColor = System.Drawing.Color.Red;
             this.labelTotalQuantity.Location = new System.Drawing.Point(858, 632);
             this.labelTotalQuantity.Name = "labelTotalQuantity";
-            this.labelTotalQuantity.Size = new System.Drawing.Size(61, 19);
+            this.labelTotalQuantity.Size = new System.Drawing.Size(83, 19);
             this.labelTotalQuantity.TabIndex = 4;
-            this.labelTotalQuantity.Text = "label1";
+            this.labelTotalQuantity.Text = "총 수량:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(875, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 12);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "제품명         | 가격                 |수량";
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 681);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelTotalQuantity);
             this.Controls.Add(this.labelTotalPrice);
             this.Controls.Add(this.vStackPanel);
@@ -145,5 +156,6 @@
         private System.Windows.Forms.FlowLayoutPanel vStackPanel;
         private System.Windows.Forms.Label labelTotalPrice;
         private System.Windows.Forms.Label labelTotalQuantity;
+        private System.Windows.Forms.Label label1;
     }
 }
